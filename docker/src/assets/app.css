@@ -1,0 +1,25 @@
+/* Estilo sencillo para registro, login y las pantallas del catálogo. */
+body { font-family: system-ui, sans-serif; margin: 0; background: #0b0011; color: #f3f4f6; }
+a { color: #ff6b6b; }
+.barra { display: flex; justify-content: space-between; align-items: center; gap: 16px;
+         padding: 12px 24px; background: #161822; border-bottom: 1px solid #282b3c; flex-wrap: wrap; }
+.barra nav { display: flex; gap: 14px; align-items: center; }
+main { max-width: 1000px; margin: 0 auto; padding: 24px; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #282b3c; }
+th { color: #8b949e; font-weight: 600; }
+.acciones { white-space: nowrap; }
+.acciones a { margin-right: 8px; }
+.ficha-form { display: grid; gap: 6px; max-width: 460px; }
+.ficha-form label { display: grid; gap: 4px; margin-top: 8px; }
+input, select, button { font: inherit; padding: 7px 9px; border-radius: 6px; border: 1px solid #363a52;
+                        background: #111219; color: #f3f4f6; }
+button, .boton { background: #d92323; border-color: #d92323; color: #fff; cursor: pointer;
+                 text-decoration: none; padding: 7px 12px; border-radius: 6px; display: inline-block; }
+.barra button { background: transparent; border-color: #363a52; }
+.en-linea { display: inline; margin: 0; }
+.error { color: #ff6b6b; font-size: .9rem; }
+.errores { color: #ff6b6b; }
+.ok { color: #4ade80; }
+.peligro { background: #b91c1c; }
+code { color: #8b949e; }

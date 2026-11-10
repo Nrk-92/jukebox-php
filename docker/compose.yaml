@@ -1,0 +1,58 @@
+name: asociacion-jukebox-multiservicio
+services:
+  web:
+    build:
+      context: ..                      # Contexto: la raíz del proyecto.
+      dockerfile: docker/Dockerfile    # Dockerfile relativo al contexto.
+    ports:
+      - "127.0.0.1:8091:80"            # Solo accesible desde este ordenador.
+    volumes:
+      - ./src:/var/www/html            # Código público (DocumentRoot).
+      - ./data:/var/www/data           # JSON privados, fuera del DocumentRoot.
+    environment:
+      PGUSER: jukebox
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      MARIADB_USER: jukebox
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mariadb:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_DB: jukebox_pg
+      POSTGRES_USER: jukebox
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jukebox -d jukebox_pg"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    # Sin ports: 5432 no se publica en Windows.
+
+  mariadb:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: jukebox_maria
+      MARIADB_USER: jukebox
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+    volumes:
+      - maria-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    # Sin ports: 3306 no se publica en Windows.
+
+volumes:
+  pg-data:
+  maria-data:

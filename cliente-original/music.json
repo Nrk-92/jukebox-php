@@ -1,0 +1,44 @@
+[
+  {
+    "Disco": "Obras Maestras de Mozart",
+    "Año": 1791,
+    "Grupo": "Wolfgang Amadeus Mozart",
+    "img": "img/mozzart.jpg",
+    "tipo": "Música Clásica",
+    "Canciones": [
+      { "id": 1, "Canción": "Pequeña Serenata Nocturna (1er Mov.)", "archivo": "audio/mozart_serenata_mov1.mp3" },
+      { "id": 2, "Canción": "Réquiem - Lacrimosa", "archivo": "audio/mozart_lacrimosa.mp3" },
+      { "id": 3, "Canción": "Marcha Turca", "archivo": "audio/mozart_marcha_turca.mp3" },
+      { "id": 4, "Canción": "Las Bodas de Fígaro (Obertura)", "archivo": "audio/mozart_figaro.mp3" },
+      { "id": 5, "Canción": "La Flauta Mágica (Aria de la Reina)", "archivo": "audio/mozart_reina_noche.mp3" }
+    ]
+  },
+  {
+    "Disco": "Sinfonías y Sonatas",
+    "Año": 1824,
+    "Grupo": "Ludwig van Beethoven",
+    "img": "img/beethoven.jpg",
+    "tipo": "Música Clásica",
+    "Canciones": [
+      { "id": 6, "Canción": "Para Elisa", "archivo": "audio/beethoven_para_elisa.mp3" },
+      { "id": 7, "Canción": "Sonata Claro de Luna (1er Mov.)", "archivo": "audio/beethoven_claro_luna_mov1.mp3" },
+      { "id": 8, "Canción": "Sonata Patética (2do Mov.)", "archivo": "audio/beethoven_patetica_mov2.mp3" },
+      { "id": 9, "Canción": "Minueto en Sol Mayor", "archivo": "audio/beethoven_minueto.mp3" },
+      { "id": 10, "Canción": "Marcha Turca (Ruinas de Atenas)", "archivo": "audio/beethoven_marcha_atenas.mp3" }
+    ]
+  },
+  {
+    "Disco": "El Arte del Contrapunto",
+    "Año": 1750,
+    "Grupo": "Johann Sebastian Bach",
+    "img": "img/bach.jpg",
+    "tipo": "Música Clásica",
+    "Canciones": [
+      { "id": 11, "Canción": "Preludio en Do Mayor", "archivo": "audio/bach_preludio_do.mp3" },
+      { "id": 12, "Canción": "Aire en la cuerda de Sol", "archivo": "audio/bach_aire.mp3" },
+      { "id": 13, "Canción": "Suite para Cello No. 1 (Preludio)", "archivo": "audio/bach_cello_preludio.mp3" },
+      { "id": 14, "Canción": "Tocata en Re Menor", "archivo": "audio/bach_tocata.mp3" },
+      { "id": 15, "Canción": "Jesús, alegría de los hombres", "archivo": "audio/bach_alegria.mp3" }
+    ]
+  }
+]

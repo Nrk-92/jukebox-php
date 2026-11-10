@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Pequeña Serenata Nocturna (1er Mov.)",
+        "artist": "Wolfgang Amadeus Mozart",
+        "category": "clasica",
+        "duration": 354,
+        "src": "audio/mozart_serenata_mov1.mp3"
+    },
+    {
+        "id": 2,
+        "title": "Réquiem - Lacrimosa",
+        "artist": "Wolfgang Amadeus Mozart",
+        "category": "clasica",
+        "duration": 246,
+        "src": "audio/mozart_lacrimosa.mp3"
+    },
+    {
+        "id": 3,
+        "title": "Marcha Turca",
+        "artist": "Wolfgang Amadeus Mozart",
+        "category": "clasica",
+        "duration": 227,
+        "src": "audio/mozart_marcha_turca.mp3"
+    },
+    {
+        "id": 4,
+        "title": "Las Bodas de Fígaro (Obertura)",
+        "artist": "Wolfgang Amadeus Mozart",
+        "category": "clasica",
+        "duration": 291,
+        "src": "audio/mozart_figaro.mp3"
+    },
+    {
+        "id": 5,
+        "title": "La Flauta Mágica (Aria de la Reina)",
+        "artist": "Wolfgang Amadeus Mozart",
+        "category": "clasica",
+        "duration": 181,
+        "src": "audio/mozart_reina_noche.mp3"
+    },
+    {
+        "id": 6,
+        "title": "Para Elisa",
+        "artist": "Ludwig van Beethoven",
+        "category": "clasica",
+        "duration": 456,
+        "src": "audio/beethoven_para_elisa.mp3"
+    },
+    {
+        "id": 7,
+        "title": "Sonata Claro de Luna (1er Mov.)",
+        "artist": "Ludwig van Beethoven",
+        "category": "clasica",
+        "duration": 356,
+        "src": "audio/beethoven_claro_luna_mov1.mp3"
+    },
+    {
+        "id": 8,
+        "title": "Sonata Patética (2do Mov.)",
+        "artist": "Ludwig van Beethoven",
+        "category": "clasica",
+        "duration": 386,
+        "src": "audio/beethoven_patetica_mov2.mp3"
+    },
+    {
+        "id": 9,
+        "title": "Minueto en Sol Mayor",
+        "artist": "Ludwig van Beethoven",
+        "category": "clasica",
+        "duration": 155,
+        "src": "audio/beethoven_minueto.mp3"
+    },
+    {
+        "id": 10,
+        "title": "Marcha Turca (Ruinas de Atenas)",
+        "artist": "Ludwig van Beethoven",
+        "category": "clasica",
+        "duration": 185,
+        "src": "audio/beethoven_marcha_atenas.mp3"
+    },
+    {
+        "id": 11,
+        "title": "Preludio en Do Mayor",
+        "artist": "Johann Sebastian Bach",
+        "category": "clasica",
+        "duration": 132,
+        "src": "audio/bach_preludio_do.mp3"
+    },
+    {
+        "id": 12,
+        "title": "Aire en la cuerda de Sol",
+        "artist": "Johann Sebastian Bach",
+        "category": "clasica",
+        "duration": 246,
+        "src": "audio/bach_aire.mp3"
+    },
+    {
+        "id": 13,
+        "title": "Suite para Cello No. 1 (Preludio)",
+        "artist": "Johann Sebastian Bach",
+        "category": "clasica",
+        "duration": 166,
+        "src": "audio/bach_cello_preludio.mp3"
+    },
+    {
+        "id": 14,
+        "title": "Tocata en Re Menor",
+        "artist": "Johann Sebastian Bach",
+        "category": "clasica",
+        "duration": 551,
+        "src": "audio/bach_tocata.mp3"
+    },
+    {
+        "id": 15,
+        "title": "Jesús, alegría de los hombres",
+        "artist": "Johann Sebastian Bach",
+        "category": "clasica",
+        "duration": 192,
+        "src": "audio/bach_alegria.mp3"
+    }
+]

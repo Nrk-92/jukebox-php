@@ -1,0 +1,5 @@
+# No enviar datos privados ni claves al contexto de construcción.
+docker/.env
+docker/data/
+data-ejemplo/
+.git/

@@ -1,0 +1,26 @@
+/* Bloque 11 · Barra de usuario sobre el diseño original del jukebox.
+   Comparte la fila 1 de la rejilla con el h1, alineada a la derecha. */
+.barra-usuario {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.barra-usuario a { color: var(--texto-secundario); }
+.barra-usuario a:hover { color: var(--texto-principal); }
+.barra-usuario form { margin: 0; }
+.barra-usuario button {
+    background: transparent;
+    color: var(--texto-secundario);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.barra-usuario button:hover { color: var(--rojo-hover); border-color: var(--rojo-marea); }
+#lista-canciones li.estado { cursor: default; color: var(--texto-secundario); }
+#lista-canciones li.estado.error { color: var(--rojo-hover); }
